@@ -18,10 +18,10 @@ const data = reactive({
 
 // 🎨 Theme settings
 const theme = reactive({
-  tableHeaderBg: '#212529', // Table head background
-  tableHeaderText: '#ffffff', // Table head text
-  tableRowBg: '#ffffff', // Table row background
-  tableRowText: '#000000', // Table row text
+  tableHeaderBg: '#212529', 
+  tableHeaderText: '#ffffff', 
+  tableRowBg: '#ffffff', 
+  tableRowText: '#000000', 
   headerBg: '#0d6efd',
   headerText: '#ffffff',
   templateBg: '#ffffff'
