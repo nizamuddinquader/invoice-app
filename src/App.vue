@@ -57,7 +57,14 @@ function printInvoice() {
 
 function downloadPDF() {
   const element = document.querySelector('.invoice-container');
-  html2pdf().from(element).save('invoice.pdf');
+  
+  const now = new Date();
+  const date = now.toISOString().split('T')[0]; 
+  const time = now.toTimeString().split(' ')[0].replace(/:/g, '-'); 
+
+  const filename = `invoice_${date}_${time}.pdf`;
+
+  html2pdf().from(element).save(filename);
 }
 </script>
 
